@@ -1,0 +1,26 @@
+PROJETO PET FELIZ — COMO ABRIR E APRESENTAR
+
+ARQUIVOS
+- index.html: estrutura e conteúdo da página.
+- style.css: cores, fontes, espaçamentos e adaptação para celular.
+- script.js: menu móvel e demonstração do formulário.
+
+COMO TESTAR
+1. Extraia a pasta do arquivo ZIP.
+2. Abra a pasta no Visual Studio Code.
+3. Abra o arquivo index.html.
+4. Clique com o botão direito no editor e escolha "Open with Live Server", se a extensão Live Server estiver instalada.
+   OU abra a pasta no gerenciador de arquivos e dê dois cliques em index.html para abrir no navegador.
+5. Teste os links do menu e preencha o formulário.
+
+IMPORTANTE SOBRE O FORMULÁRIO
+O formulário é apenas uma demonstração no navegador. Ele não envia mensagens, não salva pedidos e não possui backend. Para receber agendamentos reais, será necessário conectar um backend ou serviço de formulários.
+
+PUBLICAÇÃO
+Este projeto é estático e pode ser publicado em serviços como GitHub Pages ou Netlify. Antes de publicar para um negócio real, substitua nome, textos, contatos, fotos e informações comerciais e conecte o formulário a um serviço real.
+
+PARA A APRESENTAÇÃO
+Explique que o projeto separa responsabilidades:
+HTML = estrutura;
+CSS = aparência;
+JavaScript = interações.

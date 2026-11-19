@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pet Feliz: carinho, cuidado e serviços para o seu melhor amigo.">
+  <title>Pet Feliz | Cuidado para quem faz parte da família</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="marca" href="#inicio" aria-label="Pet Feliz - início">🐾 Pet Feliz</a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav id="menu">
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre nós</a>
+      <a href="#contato" class="botao botao-pequeno">Agendar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-texto">
+        <span class="etiqueta">AMOR E CUIDADO EM CADA PATINHA</span>
+        <h1>Seu pet merece cuidado de <span>família.</span></h1>
+        <p>Banho, tosa, produtos e muito carinho em um só lugar. Aqui, seu melhor amigo é sempre bem-vindo!</p>
+        <a class="botao" href="#contato">Quero agendar <span aria-hidden="true">→</span></a>
+        <p class="nota">Atendimento com carinho para cães e gatos.</p>
+      </div>
+      <div class="hero-imagem" role="img" aria-label="Cachorro feliz recebendo carinho">
+        <div class="selo">🐶<br><strong>Pet feliz,<br>família feliz!</strong></div>
+      </div>
+    </section>
+
+    <section class="secao" id="servicos">
+      <div class="cabecalho-secao">
+        <span class="etiqueta">O QUE FAZEMOS</span>
+        <h2>Tudo para o bem-estar do seu pet</h2>
+        <p>Serviços pensados para deixar seu companheiro saudável, limpo e feliz.</p>
+      </div>
+      <div class="cartoes">
+        <article class="cartao">
+          <div class="icone">🛁</div>
+          <h3>Banho</h3>
+          <p>Higiene e cuidado com produtos adequados para cada tipo de pelagem.</p>
+        </article>
+        <article class="cartao">
+          <div class="icone">✂️</div>
+          <h3>Tosa</h3>
+          <p>Conforto, beleza e atenção às necessidades de cada animal.</p>
+        </article>
+        <article class="cartao">
+          <div class="icone">🦴</div>
+          <h3>Loja pet</h3>
+          <p>Uma seleção de acessórios, brinquedos e itens para o dia a dia.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+      <div class="sobre-foto" aria-hidden="true">🐕‍🦺</div>
+      <div>
+        <span class="etiqueta">NOSSA ESSÊNCIA</span>
+        <h2>Mais do que um pet shop: um lugar de confiança.</h2>
+        <p>Acreditamos que os animais fazem parte da família. Por isso, nosso compromisso é oferecer atendimento atencioso, ambiente acolhedor e respeito a cada pet.</p>
+        <ul>
+          <li>♡ Atendimento atencioso</li>
+          <li>♡ Cuidado individualizado</li>
+          <li>♡ Respeito e carinho sempre</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="secao contato" id="contato">
+      <div class="cabecalho-secao">
+        <span class="etiqueta">VAMOS CONVERSAR?</span>
+        <h2>Agende um cuidado especial</h2>
+        <p>Preencha os campos e prepare-se para mimar seu melhor amigo.</p>
+      </div>
+      <form id="form-agendamento">
+        <label for="nome">Seu nome</label>
+        <input id="nome" name="nome" type="text" placeholder="Como podemos chamar você?" required>
+        <label for="pet">Nome do pet</label>
+        <input id="pet" name="pet" type="text" placeholder="Nome do seu companheiro" required>
+        <label for="servico">Serviço desejado</label>
+        <select id="servico" name="servico" required>
+          <option value="">Escolha uma opção</option>
+          <option>Banho</option>
+          <option>Tosa</option>
+          <option>Banho e tosa</option>
+          <option>Informações sobre produtos</option>
+        </select>
+        <button class="botao" type="submit">Enviar pedido</button>
+        <p id="mensagem-formulario" class="mensagem" role="status" aria-live="polite"></p>
+        <p class="aviso">Demonstração acadêmica: este formulário ainda não envia dados para uma empresa. Para receber pedidos reais, será necessário conectá-lo a um serviço ou backend.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="marca" href="#inicio">🐾 Pet Feliz</a>
+    <p>Feito com carinho para quem ama os animais.</p>
+    <small>Projeto demonstrativo • 2026</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

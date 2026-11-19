@@ -1,0 +1,121 @@
+/* Estilos do projeto Pet Feliz */
+:root {
+  --verde: #28685b;
+  --verde-escuro: #19483f;
+  --creme: #fff9ef;
+  --coral: #ef896f;
+  --texto: #263a35;
+  --suave: #f1eee5;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--texto);
+  background: #fff;
+  line-height: 1.6;
+}
+a { color: inherit; text-decoration: none; }
+.topo {
+  min-height: 76px;
+  padding: 14px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--creme);
+}
+.marca { color: var(--verde); font-size: 1.45rem; font-weight: 800; }
+nav { display: flex; align-items: center; gap: 28px; font-weight: 700; }
+nav a:hover { color: var(--coral); }
+.menu-toggle { display: none; border: 0; background: transparent; font-size: 1.7rem; }
+.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 0;
+  border-radius: 999px;
+  padding: 14px 24px;
+  background: var(--coral);
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform .2s, background .2s;
+}
+.botao:hover { background: #dc725a; transform: translateY(-2px); }
+.botao-pequeno { padding: 10px 19px; }
+.hero {
+  padding: 64px 7%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  background: var(--creme);
+}
+.hero-texto { max-width: 570px; }
+.etiqueta { color: var(--verde); font-size: .75rem; font-weight: 800; letter-spacing: .15em; }
+h1, h2, h3 { line-height: 1.15; }
+h1 { margin: 14px 0; font-size: clamp(2.6rem, 5vw, 4.5rem); letter-spacing: -.04em; }
+h1 span { color: var(--coral); }
+.hero-texto > p { max-width: 490px; font-size: 1.1rem; color: #596b64; }
+.nota { font-size: .85rem !important; }
+.hero-imagem {
+  min-height: 360px;
+  border-radius: 48% 48% 24px 24px;
+  background: linear-gradient(145deg, #e8b58e, #d4e4ce);
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero-imagem::before { content: "🐕"; font-size: clamp(9rem, 22vw, 16rem); filter: drop-shadow(0 15px 10px #52634b33); }
+.selo {
+  position: absolute;
+  right: 5%;
+  bottom: 8%;
+  background: #fff;
+  color: var(--verde);
+  border-radius: 18px;
+  padding: 14px 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px #263a3518;
+}
+.secao { padding: 78px 7%; }
+.cabecalho-secao { text-align: center; max-width: 650px; margin: 0 auto 38px; }
+h2 { font-size: clamp(2rem, 3.5vw, 3rem); margin: 10px 0; letter-spacing: -.03em; }
+.cabecalho-secao p { color: #68766f; }
+.cartoes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; max-width: 1100px; margin: auto; }
+.cartao { padding: 30px; border: 1px solid #e9eee8; border-radius: 22px; background: #fff; box-shadow: 0 10px 30px #263a3509; }
+.icone { font-size: 2.5rem; }
+.cartao h3 { color: var(--verde); font-size: 1.35rem; }
+.cartao p { color: #68766f; margin-bottom: 0; }
+.sobre { padding: 70px 10%; display: grid; grid-template-columns: .8fr 1.2fr; gap: 55px; align-items: center; background: var(--suave); }
+.sobre-foto { min-height: 280px; display: grid; place-items: center; background: #d9e7d4; border-radius: 30px; font-size: 9rem; }
+.sobre p { color: #68766f; }
+.sobre ul { list-style: none; padding: 0; font-weight: 700; color: var(--verde); }
+.sobre li { margin: 8px 0; }
+.contato { background: var(--creme); }
+form { max-width: 520px; margin: auto; padding: 30px; background: #fff; border-radius: 22px; box-shadow: 0 12px 35px #263a3510; }
+label { display: block; margin: 14px 0 6px; font-weight: 700; }
+input, select { width: 100%; padding: 13px 14px; border: 1px solid #d9e0d9; border-radius: 10px; font: inherit; background: #fff; }
+input:focus, select:focus { outline: 2px solid #8ab8a6; border-color: var(--verde); }
+form .botao { width: 100%; margin-top: 20px; }
+.mensagem { color: var(--verde); font-weight: 700; }
+.aviso { color: #7a817d; font-size: .78rem; }
+footer { padding: 35px 7%; text-align: center; background: var(--verde-escuro); color: #fff; }
+footer .marca { color: #fff; }
+footer p { margin: 8px 0; }
+footer small { opacity: .75; }
+@media (max-width: 760px) {
+  .topo { flex-wrap: wrap; }
+  .menu-toggle { display: block; color: var(--verde); }
+  nav { display: none; width: 100%; padding: 18px 0 8px; flex-direction: column; gap: 16px; }
+  nav.aberto { display: flex; }
+  .hero { grid-template-columns: 1fr; padding-top: 45px; }
+  .hero-imagem { min-height: 260px; }
+  .cartoes { grid-template-columns: 1fr; }
+  .sobre { grid-template-columns: 1fr; padding: 55px 7%; gap: 25px; }
+  .sobre-foto { min-height: 210px; }
+  .secao { padding: 58px 7%; }
+}
