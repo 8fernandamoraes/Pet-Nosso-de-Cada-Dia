@@ -111,7 +111,7 @@ footer small { opacity: .75; }
   .topo { flex-wrap: wrap; }
   .menu-toggle { display: block; color: var(--verde); }
   nav { display: none; width: 100%; padding: 18px 0 8px; flex-direction: column; gap: 16px; }
-  nav.aberto { display: flex; }
+  nav.active { display: flex; }
   .hero { grid-template-columns: 1fr; padding-top: 45px; }
   .hero-imagem { min-height: 260px; }
   .cartoes { grid-template-columns: 1fr; }
